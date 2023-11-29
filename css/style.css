@@ -465,7 +465,7 @@ body.login {
 
 .wrap-title-login {
     height: 230px;
-    background: #383a59e7;
+    background: #3399ff;
     box-shadow: 0 2px 6px rgba(142, 136, 192, 0.4);
     user-select: none;
 }
@@ -1049,6 +1049,13 @@ body.login {
     background: #7e8aac;
     cursor: pointer;
     transition: all 200ms ease-in;
+}
+
+/* Estilos para el carrusel */
+#carouselExampleAutoplaying img {
+    max-width: 100%; /* Ajusta el tamaño máximo de la anchura según tu preferencia */
+    height: auto;
+    margin: 0 auto; /* Centrar la imagen en el carrusel */
 }
 
 

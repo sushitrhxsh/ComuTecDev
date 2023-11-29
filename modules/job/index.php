@@ -29,8 +29,8 @@ if (!empty($_POST['page'])) {
 $max = 50;
 $inicio = ($page - 1) * $max;
 
-// Cargar datos de Alumnos
-//include_once 'load_data.php';
+// Cargar datos de trabajos
+include_once 'load_data.php';
 ?>
 <!DOCTYPE html>
 <html lang="es">

@@ -77,7 +77,14 @@ if (strpos($url_actual, 'modules')) {
         <li><a class="<?php if ($output[1] == 'groups') {
                             echo 'active';
                         } ?>" href="/sistema-escolar-main/modules/groups"><span class="icon">groups</span>Grupos</a></li>
-        <li><a class="groups" href="https://previewer.adalo.com/9ba0d920-6566-4a21-904b-310268fd6478?target=574bd3258f60449dacc813d13bf9da71&params=%7B%7D&fbclid=IwAR1z6C0JLFTqdjnUx6aPHyE7umJo7tmC-oMIn287mgT7adUWVndqA_6FIqk_aem_AUJz4ixrPFSqw08A9i5RvA8Z1gNOM0IOUWNf2vXYqXpgGufRUviWmDSMvCJ5RxAj4XM"><span class="icon">groups</span>Gorila movil</a></li>
+        <li><a class="<?php if ($output[1] == 'job') {
+                            echo 'active';
+                        } ?>" href="/sistema-escolar-main/modules/job">
+            <span class="icon">fact_check</span>Oportunidades</li></a>
+        </li>
+        <li><a class="attendance" href="https://previewer.adalo.com/9ba0d920-6566-4a21-904b-310268fd6478?target=574bd3258f60449dacc813d13bf9da71&params=%7B%7D&fbclid=IwAR1z6C0JLFTqdjnUx6aPHyE7umJo7tmC-oMIn287mgT7adUWVndqA_6FIqk_aem_AUJz4ixrPFSqw08A9i5RvA8Z1gNOM0IOUWNf2vXYqXpgGufRUviWmDSMvCJ5RxAj4XM">
+            <span class="icon">smartphone</span>Gorila movil</li></a>
+        </li>
     </ul>
 </div>
 <div class="menu-mobile">

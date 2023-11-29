@@ -161,13 +161,30 @@ if ($result = $conexion->query($sql)) {
 					</select>
 				</div>
 			</div>
-			<button id="btnBack" class="btn back icon" type="button">arrow_back</button>
+			<button id="btnBack" class="btn back icon" type="submit">arrow_back</button>
 			<button id="btnNext" class="btn icon" type="button">arrow_forward</button>
 			<button id="btnSave" class="btn icon" type="submit" autofocus>done</button>
 		</form>
 	</div>
 </div>
 <div class="content-aside">
-	<?php include_once "../sections/options-disabled.php"; ?>
+	<div class="form-options">
+		<div class="options">
+			<form action="" method="POST">
+				<button class="btn btn-disabled icon" name="btn" value="form_add" type="submit" disabled>add</button>
+			</form>
+			<form action="" method="POST">
+				<button class="btn btn-add icon" name="btn" value="form_coding" type="submit" >assignment</button>
+			</form>
+			<form action="" method="POST">
+				<button class="btn btn-disabled icon" name="btn" value="form_printer" type="submit" disabled>print</button>
+			</form>
+			<button id="btnSearchMobile" class="btn btn-search-mobile icon">search</button>
+			<form action="/sistema-escolar-main/">
+				<button id="btnExitOptions" class="btn btn-exit icon" type="submit">exit_to_app</button>
+			</form>
+		</div>
+	</div>
+	<?php //include_once "../sections/options-disabled.php"; ?>
 </div>
 <script src="/sistema-escolar-main/js/modules/teachers.js" type="text/javascript"></script>
