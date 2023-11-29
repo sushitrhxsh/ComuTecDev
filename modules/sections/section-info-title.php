@@ -30,6 +30,8 @@ if (strpos($url_actual, 'modules')) {
         $_SESSION['title_form_section'] = 'Grupos';
     } elseif ($name_page[1] == 'attendance') {
         $_SESSION['title_form_section'] = 'Asistencias';
+    }elseif($name_page[1] == 'job'){
+        $_SESSION['title_form_section'] = 'Oportunidad y promocion de trabajo';
     }
 } elseif (strpos($url_actual, 'attendance')) {
     $name_page[1] = 'attendance';

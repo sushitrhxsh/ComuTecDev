@@ -9,7 +9,7 @@ require_once($_SESSION['raiz'] . '/modules/sections/role-access-admin.php');
 					<tr>
 						<th>Usuario</th>
 						<th>Correo</th>
-						<th>Permisos</th>
+						<th>Foto</th>
 						<th class="center"><a class="icon">edit</a></th>
 					</tr>
 		';
@@ -19,7 +19,7 @@ require_once($_SESSION['raiz'] . '/modules/sections/role-access-admin.php');
 		    		<tr>
 						<td>' . $_SESSION["user_id"][$i] . '</td>
 						<td class="tdbreak">' . $_SESSION["user_email"][$i] . '</td>
-						<td><img class="image_user" src="/sistema-escolar-main/images/users/' . $_SESSION["user_image"][$i] . '/></td>
+						<td><img class="image_user" src="/sistema-escolar-main/images/users/' . $_SESSION["user_image"][$i] . '"/></td>
 						<td>
 							<form action="" method="POST">
 								<input style="display:none;" type="text" name="id" value="' . $_SESSION["user_id"][$i] . '"/>

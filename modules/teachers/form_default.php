@@ -40,7 +40,7 @@ require_once($_SESSION['raiz'] . '/modules/sections/role-access-admin-editor.php
 							</form>
 						</td>
 						<td>
-							<form action="" method="POST">
+							<form action="delete.php" method="POST">
 								<input style="display:none;" type="text" name="txtuserid" value="' . $_SESSION["user_id"][$i] . '"/>
 								<button class="btndelete" name="btn" value="form_delete" type="submit"></button>
 							</form>

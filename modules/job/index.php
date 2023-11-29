@@ -8,6 +8,7 @@ header('Cache-Control: no-cache, must-revalidate, max-age=0');
 header('Cache-Control: post-check=0, pre-check=0', false);
 header('Pragma: no-cache');
 
+//Permisos de administrador y editor
 require_once($_SESSION['raiz'] . '/modules/sections/role-access-admin-editor.php');
 
 // Formulario actual
@@ -15,22 +16,6 @@ if (!empty($_POST['btn'])) {
 	$view_form = $_POST['btn'] . '.php';
 } else {
 	$view_form = 'form_default.php';
-}
-
-if ($view_form == 'form_default.php') {
-	unset($_SESSION['id_group']);
-	unset($_SESSION['school_period_group']);
-	unset($_SESSION['name_group']);
-	unset($_SESSION['semester_group']);
-	unset($_SESSION['subjects']);
-	unset($_SESSION['subjects_group']);
-	unset($_SESSION['subject_name_group']);
-	unset($_SESSION['checked_subject']);
-	unset($_SESSION['students']);
-	unset($_SESSION['students_count']);
-	unset($_SESSION['user_student_group']);
-	unset($_SESSION['name_student_group']);
-	unset($_SESSION['checked_student']);
 }
 
 // Pagina actual
@@ -41,11 +26,11 @@ if (!empty($_POST['page'])) {
 }
 
 // Numero de registros a visualizar
-$max = 20;
+$max = 50;
 $inicio = ($page - 1) * $max;
 
-// Cargar datos de Grupos
-include_once 'load_data.php';
+// Cargar datos de Alumnos
+//include_once 'load_data.php';
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -56,13 +41,17 @@ include_once 'load_data.php';
 	<meta name="robots" content="noindex">
 	<meta name="google" value="notranslate">
 	<link rel="icon" type="image/png" href="/sistema-escolar-main/images/logo.png" />
-	<title>Grupos | ComunicaTec</title>
+	<title>Oportunidad | ComunicaTec</title>
 	<meta name="description" content="Sistema Escolar, gestión de asistencias." />
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 	<link rel="stylesheet" href="/sistema-escolar-main/css/style.css" media="screen, projection" type="text/css" />
 	<link rel="stylesheet" href="/sistema-escolar-main/css/select2.css" media="screen, projection" type="text/css" />
-	<script src="/sistema-escolar-main/js/external/jquery.min.js" type="text/javascript"></script>
-    <script src="/sistema-escolar-main/js/external/prefixfree.min.js" type="text/javascript"></script>
-	<script src="/sistema-escolar-main/js/controls/unsetnotif.js"  type="text/javascript"></script>
+	<link rel="stylesheet" href="/sistema-escolar-main/css/litepicker.css" media="screen, projection" type="text/css" />
+    <script src="/sistema-escolar-main/js/external/jquery.min.js" type="text/javascript"></script>
+	<script src="/sistema-escolar-main/js/external/litepicker.js" type="text/javascript"></script>
+	<script src="/sistema-escolar-main/js/external/prefixfree.min.js" type="text/javascript"></script>
+	<script src="/sistema-escolar-main/js/controls/unsetnotif.js" type="text/javascript"></script>
 	<script src="/sistema-escolar-main/js/external/select2.js" type="text/javascript"></script>
 	<script type="text/javascript">
 		$(window).load(function() {
@@ -94,5 +83,8 @@ include_once 'load_data.php';
 	</section>
 </body>
 <script src="/sistema-escolar-main/js/controls/buttons.js" type="text/javascript"></script>
+<!-- Bootstrap JavaScript Libraries-->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
 
 </html>

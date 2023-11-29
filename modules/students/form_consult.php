@@ -17,6 +17,7 @@ if ($result = $conexion->query($sql)) {
 		$_SESSION['student_career'] = $row['career'];
 		$_SESSION['student_documentation'] = $row['documentation'];
 		$_SESSION['student_admission_date'] = $row['admission_date'];
+		$_SESSION['student_image'] = $row['image'];
 	}
 }
 ?>
@@ -26,6 +27,7 @@ if ($result = $conexion->query($sql)) {
 	</div>
 	<div class="body">
 		<form name="form-consult-students" action="#" method="POST">
+		<img class="image_user" src="/sistema-escolar-main/images/users/<?= $_SESSION["student_image"]; ?>"/>
 			<div class="wrap">
 				<div class="first">
 					<label class="label">Usuario</label>

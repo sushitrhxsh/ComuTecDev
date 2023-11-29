@@ -9,7 +9,7 @@ require_once($_SESSION['raiz'] . '/modules/sections/role-access-admin-editor.php
 					<tr>
 						<th>Usuario</th>
 						<th>Nombre</th>
-						<th>CURP</th>
+						<th>Fecha de nacimiento</th>
 						<th class="center" style="width: 80px;">Admisión</th>
 						<th class="center"><a class="icon">visibility</a></th>
 						<th class="center"><a class="icon">edit</a></th>
@@ -26,7 +26,7 @@ require_once($_SESSION['raiz'] . '/modules/sections/role-access-admin-editor.php
 		    		<tr>
 		    			<td>' . $_SESSION["user_id"][$i] . '</td>
 						<td>' . $_SESSION["student_name"][$i] . '</td>
-						<td class="tdbreakw">' . $_SESSION["student_curp"][$i] . '</td>
+						<td class="tdbreakw">' . $_SESSION["student_birth"][$i] . '</td>
 						<td class="center">' . $_SESSION["student_date"][$i] . '</td>
 						<td>
 							<form action="" method="POST">

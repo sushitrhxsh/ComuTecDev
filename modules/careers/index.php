@@ -39,7 +39,7 @@ include_once 'load_data.php';
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
 	<meta name="robots" content="noindex">
     <meta name="google" value="notranslate">
-	<link rel="icon" type="image/svg+xml" href="/sistema-escolar-main/images/icon.svg" />
+	<link rel="icon" type="image/png" href="/sistema-escolar-main/images/logo.png" />
 	<title>Carreras | ComunicaTec</title>
 	<meta name="description" content="Sistema Escolar, gestión de asistencias." />
 	<link rel="stylesheet" href="/sistema-escolar-main/css/style.css" media="screen, projection" type="text/css" />

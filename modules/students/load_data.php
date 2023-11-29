@@ -28,6 +28,7 @@ if ($result = $conexion->query($sql)) {
 				$_SESSION['student_name'] = array();
 				$_SESSION['student_curp'] = array();
 				$_SESSION['student_date'] = array();
+				$_SESSION['student_birth'] = array();
 
 				$i = 0;
 
@@ -39,6 +40,7 @@ if ($result = $conexion->query($sql)) {
 						$_SESSION['student_curp'][$i] = $row['curp'];
 						$_SESSION['student_name'][$i] = $row['name'] . ' ' . $row['surnames'];
 						$_SESSION['student_date'][$i] = $row['admission_date'];
+						$_SESSION['student_birth'][$i] = $row['date_of_birth'];
 
 						$i += 1;
 					}
@@ -49,6 +51,7 @@ if ($result = $conexion->query($sql)) {
 				$_SESSION['student_name'] = array();
 				$_SESSION['student_curp'] = array();
 				$_SESSION['student_date'] = array();
+				$_SESSION['student_birth'] = array();
 
 				$i = 0;
 
@@ -60,6 +63,7 @@ if ($result = $conexion->query($sql)) {
 						$_SESSION['student_curp'][$i] = $row['curp'];
 						$_SESSION['student_name'][$i] = $row['name'] . ' ' . $row['surnames'];
 						$_SESSION['student_date'][$i] = $row['admission_date'];
+						$_SESSION['student_birth'][$i] = $row['date_of_birth'];
 
 						$i += 1;
 					}

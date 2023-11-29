@@ -24,7 +24,7 @@
 .icon {
     font-family: "icons" !important;
     text-transform: none;
-    text-shadow: 0 1px 5px rgba(142, 136, 192, 0.2);
+    text-shadow: 0 1px 5px rgba(30, 100, 180, 0.2);
 }
 
 
@@ -145,7 +145,7 @@ body.login {
     float: right;
     height: 50px;
     margin: 35px 3%;
-    background: #44475a;
+    background: #3399ff;
     box-shadow: 0 2px 2px rgba(73, 80, 104, 0.4);
     border-radius: 0.4em;
     user-select: none;
@@ -164,7 +164,7 @@ body.login {
     display: block;
     margin-left: 4%;
     color: #eef4ff;
-    text-shadow: 0 1px 5px rgba(142, 136, 192, 0.2);
+    text-shadow: 0 1px 5px rgba(21, 4, 179, 0.2);
     font-size: 1.25em;
     font-weight: 500;
     text-transform: capitalize;
@@ -220,7 +220,7 @@ body.login {
     width: 22%;
     top: 0;
     bottom: 0;
-    background: #383a59;
+    background: #005b96; /* #383a59*/
     box-shadow: 2px 0 2px rgba(73, 80, 104, 0.4);
     overflow-x: hidden;
     overflow-y: auto;
@@ -253,7 +253,7 @@ body.login {
     margin: 5% 8%;
     background-color: #6272a4;
     box-shadow: 0 0 6px rgba(142, 136, 192, 0.2);
-    border: 3px solid #6272a4;
+    border: 3px solid rgb(17, 16, 16);
     border-radius: 10em;
     pointer-events: none;
 }
@@ -661,7 +661,7 @@ body.login {
 
 .form-options {
     width: 100%;
-    background: #44475a;
+    background: #3399ff;
     box-shadow: 0 2px 2px rgba(73, 80, 104, 0.4);
     border-radius: 0.4em;
     user-select: none;
@@ -834,7 +834,7 @@ body.login {
     float: left;
     margin: 0 0 35px 0;
     width: 71%;
-    background: #44475a;
+    background: #3399ff;
     box-shadow: 0 2px 2px rgba(73, 80, 104, 0.4);
     border-radius: 0.4em;
 }
@@ -988,10 +988,18 @@ body.login {
     transition: all 200ms ease-in;
 }
 
+.form-gridview td img.image_user {
+    max-width: 50px; /* Ajusta el tamaño máximo de la anchura según tu preferencia */
+    max-height: 50px; /* Ajusta el tamaño máximo de la altura según tu preferencia */
+    width: auto;
+    height: auto;
+}
+
 .form-gridview tr:hover td {
     background: #dde8fc;
     transition: all 200ms ease-in;
 }
+
 
 .pages {
     display: block;
@@ -1053,7 +1061,7 @@ body.login {
     float: left;
     margin: 0 0 35px 0;
     width: 71%;
-    background: #44475a;
+    background: #3399ff;
     box-shadow: 0 2px 2px rgba(73, 80, 104, 0.4);
     border-radius: 0.4em;
     user-select: none;
@@ -1231,7 +1239,7 @@ body.login {
     height: 50px;
     margin: 0;
     padding: 8px 0 0 8px;
-    background: #6272a4;
+    background: #7d99ee;
     box-shadow: -1px -1px 6px rgba(142, 136, 192, 0.2);
     border: none;
     border-color: #929cb9;
@@ -1507,6 +1515,14 @@ body.login {
     transition: all 200ms ease-in;
 }
 
+.form-data .body .image_user {
+    max-width: 500px; /* Ajusta el tamaño máximo de la anchura según tu preferencia */
+    max-height: 500px; /* Ajusta el tamaño máximo de la altura según tu preferencia */
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px; /* Ajusta el margen según tu preferencia */
+}
 
 /*-------------------------------------------
   Formulario | Careers
@@ -2194,7 +2210,7 @@ input[type="range"]:active {
     justify-content: center;
     min-width: 52px;
     min-height: 52px;
-    background: #44475a;
+    background: #2e303d;
     box-shadow: 0 2px 2px rgba(73, 80, 104, 0.4);
     border-radius: 0.4em;
     color: #eef4ff;
@@ -2243,7 +2259,7 @@ input[type="range"]:active {
     display: block;
     margin: 4px 6px 0 0;
     padding: 0em .35em;
-    color: #eef4ff;
+    color: #556788;
     font-size: 1.3em;
     text-align: center;
     text-decoration: none;
@@ -2265,7 +2281,7 @@ input[type="range"]:active {
 .menu-mobile header nav ul li a:focus {
     background: #323844;
     box-shadow: 0 0 2px rgba(73, 80, 104, 0.4);
-    color: #9492c0;
+    color: #9293c0;
     transition: all 200ms ease-in;
 }
 

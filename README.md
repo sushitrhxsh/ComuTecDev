@@ -1,3 +1,5 @@
-# Hola gente ComTecDev :)
+# Hola gente Bienvenidos a ComTecDev :)
 
-muchas gracias
+Este es mi repositorio o el vertedero de mis codigos 
+
+Atte: Alex 🐱‍👓
